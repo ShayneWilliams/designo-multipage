@@ -1,0 +1,37 @@
+
+
+.container{
+    background: var(--peach);
+    width: 80%;
+    max-width: 1111px;
+    height: 292px;
+    margin: 0 auto -72px auto;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+    padding: 72px 95px 95px 95px;
+    color: white;
+    display: flex;
+}
+
+.container__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 459px;
+}
+
+.container__text h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.container button{
+    background-color: white;
+    border: none;
+    width: 152px;
+    height: 56px;
+    border-radius: 5px;
+}

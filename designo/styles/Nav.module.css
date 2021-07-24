@@ -1,0 +1,33 @@
+
+.nav-container{
+    display: flex;
+    margin: 64px 0;
+    justify-content: space-between;
+    
+}
+
+.nav-container__items{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+
+}
+
+
+.nav-container__logo img{
+    width: 196px;
+    height: 24px;
+}
+
+.nav-container__items{
+    max-width: 370px;
+}
+.nav-container__items a{
+    /* width: 100px; */
+
+}
+
+.nav-container__logo{
+    width: 50%;
+}

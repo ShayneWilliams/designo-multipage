@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: jost, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -11,6 +11,20 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 26px;
+  font-size: 1rem;
+  
+}
 * {
   box-sizing: border-box;
+}
+
+:root{
+  --peach:  #E7816B;
+  --black: #1D1C1E;
+  --white: #FFFFFF;
+  --light-peach: #FFAD9B;
+  --dark-grey: #333136;
+  --light-grey: #F1F3F5;
 }
