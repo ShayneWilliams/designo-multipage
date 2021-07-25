@@ -1,7 +1,18 @@
 
 
 .container{
-    background: var(--peach);
+    background-image: url('/assets/shared/desktop/bg-pattern-two-circles.svg'), url('/assets/shared/desktop/bg-pattern-three-circles.svg') ;
+    background-color: var(--peach);
+    background-position:
+    top -65px right 0px,
+    bottom -80px right 0px;
+  
+  background-size: 584px 292px,
+   876px 292px;
+  background-repeat: no-repeat;
+
+
+
     width: 80%;
     max-width: 1111px;
     height: 292px;
@@ -11,27 +22,54 @@
     z-index: 2;
     padding: 72px 95px 95px 95px;
     color: white;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: 'left right';
+    position: relative;
 }
 
-.container__text{
+.container__left{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     max-width: 459px;
+    grid-area: left;
 }
 
-.container__text h2{
+.container__left h2{
     font-size: 40px;
     line-height: 40px;
     margin: 0;
 }
 
-.container button{
+.container__right{
+    grid-area: right;
+    justify-self: end;
+    align-self: center;
+
+}
+.container__right button{
     background-color: white;
     border: none;
     width: 152px;
     height: 56px;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'jost';
 }
+
+/* .container img{
+    position: absolute;
+    z-index: 20;
+    top:0px;
+    right: 0px;
+    width: 400px;
+    height: 400px;
+} */
+/* 
+.test img{
+    position: relative;
+    z-index: 300;
+} */
+
