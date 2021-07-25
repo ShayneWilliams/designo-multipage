@@ -9,6 +9,9 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
+      <div className={styles['gray-shape__left__container']}>
+        <div className={styles['gray-shape__left__container__content']} />
+      </div>
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>
@@ -21,9 +24,7 @@ export default function Home() {
             rel="stylesheet"
           />
         </Head>
-
         <Nav />
-
         <div className={styles.hero}>
           <div className={styles['hero__circle']}>
             <img src="/assets/home/desktop/bg-pattern-hero-home.svg" />
@@ -45,7 +46,9 @@ export default function Home() {
             <img src="assets/home/desktop/image-hero-phone.png" />
           </div>
         </div>
-
+        {/* <div className={styles['gray-shape__left__container']}>
+          <div className={styles['gray-shape__left__container__content']} />
+        </div> */}
         <div className={styles.projects}>
           <div className={styles['projects__item-1']}>
             <img src="/assets/home/desktop/image-web-design-large.jpg" />
@@ -101,13 +104,10 @@ export default function Home() {
               </Link>
             </div>
 
-
-
-
             {/* project 2 bottom */}
 
             <div className={styles['projects__item-2__bottom']}>
-            <img src="/assets/home/desktop/image-graphic-design.jpg" />
+              <img src="/assets/home/desktop/image-graphic-design.jpg" />
               <Link href="/graphic-design">
                 <div className={styles['projects__item-2__bottom__content']}>
                   <h2>GRAPHIC DESIGN</h2>
@@ -134,7 +134,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div className={styles['three-circle-cards']}>
           <div className={styles['three-circle-cards__single']}>
             <div>
@@ -170,8 +169,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-
         {/* <img src ='/assets/home/desktop/illustration-friendly.svg'/> */}
+      </div>
+      <div className={styles['gray-shape__right__container']}>
+        <div className={styles['gray-shape__right__container__content']} />
       </div>
       <PageBottom />
     </>
