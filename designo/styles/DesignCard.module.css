@@ -1,0 +1,22 @@
+
+.container{
+    width: 350px;
+    height: 478px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #FDF3F0;
+    /* color: white; */
+    text-align: center;
+}
+
+.container img{
+    height:320px;
+}
+
+.container h2{
+    color: var(--peach);
+}
+.container p{
+    width: 270px;
+    margin: auto;
+}

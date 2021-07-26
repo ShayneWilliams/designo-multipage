@@ -5,20 +5,22 @@ export default function Nav() {
     return (
         <div className={styles['nav-container']}>
             <div className={styles['nav-container__logo']}>
-                <a>
+
+                <Link href='/'>
+                
                     <img src='/assets/shared/desktop/logo-dark.png'/>
-                </a>
+                </Link>
             </div>
 
             <div className={styles['nav-container__items']}>
 
-                <Link href='/'>
+                <Link href='/about'>
                     <a>OUR COMPANY</a>
                 </Link>
-                <Link href='/'>
+                <Link href='/locations'>
                     <a>LOCATIONS</a>
                 </Link>
-                <Link href='/'>
+                <Link href='/contact'>
                     <a>CONTACT</a>
                 </Link>
 

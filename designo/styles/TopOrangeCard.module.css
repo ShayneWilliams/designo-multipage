@@ -1,0 +1,29 @@
+.container {
+  background-image: url('/assets/shared/desktop/bg-pattern-six-circles.svg');
+  background-color: var(--peach);
+  background-position: bottom -0px right 0px ,
+  top -100px right 0px;
+
+  background-size: 876px 292px, 876px 292px;
+  background-repeat: no-repeat;
+
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  height: 252px;
+  border-radius: 15px;
+}
+
+.container p{
+    align-self: flex-start;
+    margin: 0;
+    max-width: 420px;
+
+}
+
+.container h1{
+    margin-bottom: 24px;
+    align-self: flex-end;
+}
