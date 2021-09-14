@@ -1,0 +1,71 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.orange-card {
+  display: flex;
+  background-color: var(--peach);
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.orange-card img {
+  height: 100%;
+}
+
+.orange-card__content {
+  display: grid;
+  background-image: url('/assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+
+  background-position: bottom -0px right 0px;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.orange-card__content__text {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  max-width: 460px;
+}
+
+
+.peach-card{
+    display: flex;
+    margin: 160px auto;
+    background-color: #FDF3F0;
+    border-radius: 15px;
+    /* background-image: url('/assets/shared/desktop/bg-pattern-two-circles.svg');
+    background-repeat: no-repeat;
+    background-position: bottom -220px left 300px;
+    background-size: 584px 584px; */
+    overflow: hidden;
+}
+
+
+.peach-card__content{
+    display: grid;
+    /* justify-items: center; */
+    align-content: center;
+    max-width: 445px;
+    margin: 0 auto;
+    
+    
+    /* background-image: url('/assets/shared/desktop/bg-pattern-two-circles.svg');
+    background-repeat: no-repeat;
+    background-position: bottom -220px left -50px;
+    background-size: 584px 584px; */
+
+}
+
+.peach-card__content h2{
+    color: var(--peach);
+    
+}
+/* .peach-card */
+

@@ -1,10 +1,13 @@
 import React from 'react';
 import TopOrangeCard from '../components/TopOrangeCard';
-import styles from '../styles/WebDesign.module.css';
+import styles from '../styles/Design.module.css';
 import Nav from '../components/Nav';
 import PageBottom from '../components/PageBottom';
 import DesignCard from '../components/DesignCard';
 import CardCollection from '../components/CardCollection';
+import GrayCard from '../components/GrayCard';
+import GrayCardCollection from '../components/GrayCardCollection';
+import Link from 'next/link';
 export default function WebDesign() {
   return (
     <>
@@ -51,6 +54,26 @@ export default function WebDesign() {
           />
         </CardCollection>
 
+        <GrayCardCollection>
+          <Link href="/app-design">
+            <a>
+              <GrayCard
+                title="APP DESIGN"
+                description="VIEW PROJECTS"
+                pic="/assets/home/desktop/image-app-design.jpg"
+              />
+            </a>
+          </Link>
+          <Link href="/graphic-design">
+            <a>
+              <GrayCard
+                title="GRAPHIC DESIGN"
+                description="VIEW PROJECTS"
+                pic="/assets/home/desktop/image-graphic-design.jpg"
+              />
+            </a>
+          </Link>
+        </GrayCardCollection>
       </div>
       <PageBottom />
     </>

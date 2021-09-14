@@ -1,9 +1,74 @@
-import React from 'react'
-
+import React from 'react';
+import TopOrangeCard from '../components/TopOrangeCard';
+import styles from '../styles/Design.module.css';
+import Nav from '../components/Nav';
+import PageBottom from '../components/PageBottom';
+import DesignCard from '../components/DesignCard';
+import CardCollection from '../components/CardCollection';
+import GrayCard from '../components/GrayCard';
+import GrayCardCollection from '../components/GrayCardCollection';
+import Link from 'next/link';
 export default function GraphicDesign() {
-    return (
-        <div>
-            GRAPHIC DESIGN
-        </div>
-    )
+  return (
+    <>
+      <div className={styles['gray-shape__left__container']}>
+        <div className={styles['gray-shape__left__container__content']} />
+      </div>
+      <div className={styles['container']}>
+        <Nav />
+        <TopOrangeCard
+          title="GRAPHIC DESIGN"
+          description="We deliver eye-catching branding materials that are 
+          tailored to meet your business objectives.
+          1"
+        />
+
+        <CardCollection>
+          <DesignCard
+            title="TIM BROWN"
+            description="A book cover designed for Tim Brown’s new release, ‘Change’"
+            pic="/assets/graphic-design/desktop/image-change.jpg"
+          />
+          <DesignCard
+            title="BOXED WATER"
+            description="A simple packaging concept made for Boxed Water"
+            pic="/assets/graphic-design/desktop/image-boxed-water.jpg"
+          />
+          <DesignCard
+            title="SCIENCE"
+            description="A poster made in collaboration with the Federal Art Project"
+            pic="/assets/graphic-design/desktop/image-science.jpg"
+          />
+            <DesignCard
+            title="LOOPSTUDIOS"
+            description="A VR experience app made for Loopstudios"
+            pic="/assets/app-design/desktop/image-loopstudios.jpg"
+          />
+
+        </CardCollection>
+
+        <GrayCardCollection>
+          <Link href="/web-design">
+            <a>
+              <GrayCard
+                title="WEB DESIGN"
+                description="VIEW PROJECTS"
+                pic="/assets/home/desktop/image-web-design-small.jpg"
+              />
+            </a>
+          </Link>
+          <Link href="/app-design">
+            <a>
+              <GrayCard
+                title="APP DESIGN"
+                description="VIEW PROJECTS"
+                pic="/assets/home/desktop/image-app-design.jpg"
+              />
+            </a>
+          </Link>
+        </GrayCardCollection>
+      </div>
+      <PageBottom />
+    </>
+  );
 }

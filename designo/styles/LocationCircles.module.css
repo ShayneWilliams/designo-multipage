@@ -1,0 +1,33 @@
+.locations{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+
+.locations img{
+    background: url('/assets/shared/desktop/bg-pattern-small-circle.svg');
+
+}
+
+
+.locations button{
+    background: var(--peach);
+    border: none;
+    color: white;
+    width: 152px;
+    height: 56px;
+    border-radius: 5px;
+}
+
+/* .locations__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+
+.locations div{
+    margin: 46px 0 32px 0;
+}

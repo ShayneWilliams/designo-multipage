@@ -1,0 +1,130 @@
+
+
+.container{
+    width: 80%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+
+.location{
+    /* display: flex; */
+    width: 100%;
+
+}
+
+
+
+
+
+.map-left{
+display: grid;
+grid-template-columns: [first] 30px;
+margin-bottom: 32px;
+}
+
+
+.map-left{
+    display: grid;
+    /* grid-auto-flow: row; */
+    grid-template-columns:  [first] 2fr [second] 1fr;
+    grid-column-gap: 30px;
+    margin-bottom: 32px;
+}
+
+.map-left img{
+    /* grid-column-start: first; */
+    border-radius: 15px;
+
+    /* max-width: 350px;
+    height: 326px; */
+}
+
+.map-left__content{
+     /* display: grid;
+     justify-items: center;
+     align-items: center; */
+     padding: 88px 95px;
+     max-height: 326px;
+     background-color: #FDF3F0;
+     border-radius: 15px;
+}
+
+.map-left__content__title{
+    display: grid;
+    justify-items: flex-start;
+}
+
+.map-left__content__title h2{
+    color: #E7816B;
+    margin-bottom: 24px;
+    margin-top: 0px;
+}
+
+.map-left__content__description{
+    display: flex;
+    justify-content: space-between;
+
+}
+.map-left__content__description p{
+    width: 255px;
+    line-height: 26px;
+    margin: 0px;
+
+}
+
+/* -------------------------------------------------------------------------- */
+
+.map-right{
+    display: grid;
+    /* grid-auto-flow: row; */
+    grid-template-columns:  [first] 2fr [second] 1fr;
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-column-gap: 30px;
+    margin-bottom: 32px;
+}
+
+.map-right img{
+    /* grid-column-start: first; */
+    border-radius: 15px;
+
+    /* max-width: 350px;
+    height: 326px; */
+}
+
+.map-right__content{
+     /* display: grid;
+     justify-items: center;
+     align-items: center; */
+     padding: 88px 95px;
+     max-height: 326px;
+     background-color: #FDF3F0;
+     border-radius: 15px;
+}
+
+.map-right__content__title{
+    display: grid;
+    justify-items: flex-start;
+}
+
+.map-right__content__title h2{
+    color: #E7816B;
+    margin-bottom: 24px;
+    margin-top: 0px;
+}
+
+.map-right__content__description{
+    display: flex;
+    justify-content: space-between;
+
+}
+.map-right__content__description p{
+    width: 255px;
+    line-height: 26px;
+    margin: 0px;
+
+}
+
+
+/* .map-right */

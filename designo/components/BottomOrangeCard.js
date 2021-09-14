@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/OrangeCard.module.css'
+import Link from 'next/link'
 export default function OrangeCard() {
     return (
         <div className ={styles.container}>
@@ -9,7 +10,7 @@ export default function OrangeCard() {
             </div>
 
             <div className = {styles['container__right']}>
-                <button>GET IN TOUCH</button>
+                <Link href='/contact'><button>GET IN TOUCH</button></Link>
             </div>
             {/* <div className={styles['test']}>
 

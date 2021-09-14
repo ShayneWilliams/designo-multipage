@@ -1,0 +1,30 @@
+
+.container{
+    max-width:  541px;
+    position: relative;
+    height: 308px;
+    /* width: 541px; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.5) */
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+.content{
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 308px;
+    width: 541px;
+    align-content: center;
+}   
+
+.content:hover{
+  background: rgba(231, 129, 107, 0.5);
+  cursor: pointer;
+}
