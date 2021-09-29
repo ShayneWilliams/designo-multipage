@@ -10,6 +10,9 @@ export default function Locations() {
         <div className={styles.location}>
           <div className={styles['map-right']}>
             <div className={styles['map-right__content']}>
+              <div className={styles['map-right__content__circles']}>
+                <img src="/assets/shared/desktop/bg-pattern-two-circles.svg" />
+              </div>
               <div className={styles['map-right__content__title']}>
                 <h2>Canada</h2>
               </div>
@@ -25,6 +28,10 @@ export default function Locations() {
                   <br />M : contact@designo.co
                 </p>
               </div>
+
+              {/* <div className={styles['hero__circle']}>
+            <img src="/assets/shared/desktop/bg-pattern-two-circles.svg" />
+          </div> */}
             </div>
 
             <div>
@@ -32,13 +39,15 @@ export default function Locations() {
             </div>
           </div>
 
-
-{/* ---------------------------------------------------------------------------------------------------------- */}
+          {/* ---------------------------------------------------------------------------------------------------------- */}
           <div className={styles['map-left']}>
-          <div>
+            <div>
               <img src="/assets/locations/desktop/image-map-australia.png" />
             </div>
             <div className={styles['map-left__content']}>
+            <div className={styles['map-right__content__circles']}>
+                <img src="/assets/shared/desktop/bg-pattern-two-circles.svg" />
+              </div>
               <div className={styles['map-left__content__title']}>
                 <h2>Australia</h2>
               </div>
@@ -46,7 +55,7 @@ export default function Locations() {
                 <p>
                   <b>Designo AU Office</b>
                   <br />
-                  19 Balonne Street <br/>
+                  19 Balonne Street <br />
                   New South Wales 2443
                 </p>
                 <p>
@@ -55,14 +64,14 @@ export default function Locations() {
                 </p>
               </div>
             </div>
-
-
           </div>
 
-
-{/* ---------------------------------------------------------------------------------------------------------- */}
-<div className={styles['map-right']}>
+          {/* ---------------------------------------------------------------------------------------------------------- */}
+          <div className={styles['map-right']}>
             <div className={styles['map-right__content']}>
+            <div className={styles['map-right__content__circles']}>
+                <img src="/assets/shared/desktop/bg-pattern-two-circles.svg" />
+              </div>
               <div className={styles['map-right__content__title']}>
                 <h2>United Kingdom</h2>
               </div>
@@ -70,7 +79,7 @@ export default function Locations() {
                 <p>
                   <b>Designo UK Office</b>
                   <br />
-                  13  Colorado Way <br />
+                  13 Colorado Way <br />
                   Rhyd-y-fro SA8 9GA
                 </p>
                 <p>
@@ -84,8 +93,6 @@ export default function Locations() {
               <img src="/assets/locations/desktop/image-map-united-kingdom.png" />
             </div>
           </div>
-
-
         </div>
       </div>
       <PageBottom />

@@ -3,7 +3,13 @@ import LocationCircles from '../components/LocationCircles';
 import Nav from '../components/Nav';
 import PageBottom from '../components/PageBottom';
 import styles from '../styles/About.module.css';
+import useMediaQuery from '../components/useMediaQuery'
+
 export default function about() {
+
+
+  const isTablet = useMediaQuery(1024)
+  const isMobile = useMediaQuery(375)
   return (
     <>
     <div className={styles.container}>
@@ -23,12 +29,17 @@ export default function about() {
         </div>
 
         <div>
-          <img src="/assets/about/desktop/image-about-hero.jpg" />
+      {isMobile ?  <img src="/assets/about/mobile/image-about-hero.jpg"/> :  isTablet ?  <img src="/assets/about/tablet/image-about-hero.jpg"  /> : <img src="/assets/about/desktop/image-about-hero.jpg"  />}
+          
         </div>
       </div>
-      <div className={styles['peach-card']}>
-        <img src="/assets/about/desktop/image-world-class-talent.jpg" />
-        <div className={styles['peach-card__content']}>
+      <div className={styles['peach-card-1']}>
+      {/* {isTablet ?  <img src="/assets/about/tablet/image-world-class-talent.jpg" /> : <img src="/assets/about/desktop/image-world-class-talent.jpg" />} */}
+      {isMobile ?  <img src="/assets/about/mobile/image-world-class-talent.jpg"/> :  isTablet ?  <img src="/assets/about/tablet/image-world-class-talent.jpg" /> : <img src="/assets/about/desktop/image-world-class-talent.jpg" />}
+
+
+        {/* <img src="/assets/about/desktop/image-world-class-talent.jpg" /> */}
+        <div className={styles['peach-card__content-1']}>
           <h2>World-class talent</h2>
           <p>
             We are a crew of strategists, problem-solvers, and technologists.
@@ -48,8 +59,8 @@ export default function about() {
 
         <LocationCircles/>
 
-        <div className={styles['peach-card']}>
-          <div className={styles['peach-card__content']}>
+        <div className={styles['peach-card-2']}>
+          <div className={styles['peach-card__content-2']}>
             <h2>The real deal</h2>
             <p>
               As strategic partners in our clients’ businesses, we are ready to
@@ -64,7 +75,11 @@ export default function about() {
               to take action and drive real results.
             </p>
           </div>
-          <img src="/assets/about/desktop/image-real-deal.jpg" />
+
+      {isMobile ?  <img src="/assets/about/mobile/image-real-deal.jpg" /> :  isTablet ?  <img src="/assets/about/tablet/image-real-deal.jpg" /> : <img src="/assets/about/desktop/image-real-deal.jpg" />}
+
+          {/* {isTablet ?  <img src="/assets/about/tablet/image-real-deal.jpg" /> : <img src="/assets/about/desktop/image-real-deal.jpg" />} */}
+          
         </div>
     </div>
       <PageBottom />

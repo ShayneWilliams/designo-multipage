@@ -55,24 +55,22 @@ export default function WebDesign() {
         </CardCollection>
 
         <GrayCardCollection>
-          <Link href="/app-design">
-            <a>
-              <GrayCard
-                title="APP DESIGN"
-                description="VIEW PROJECTS"
-                pic="/assets/home/desktop/image-app-design.jpg"
-              />
-            </a>
-          </Link>
-          <Link href="/graphic-design">
-            <a>
-              <GrayCard
-                title="GRAPHIC DESIGN"
-                description="VIEW PROJECTS"
-                pic="/assets/home/desktop/image-graphic-design.jpg"
-              />
-            </a>
-          </Link>
+          <GrayCard
+            title="APP DESIGN"
+            description="VIEW PROJECTS"
+            desktopPic="/assets/home/desktop/image-app-design-small.jpg"
+            tabletPic="/assets/home/tablet/image-app-design.jpg"
+            mobilePic="/assets/home/mobile/image-app-design.jpg"
+            page="/app-design"
+          />
+          <GrayCard
+            title="GRAPHIC DESIGN"
+            description="VIEW PROJECTS"
+            desktopPic="/assets/home/desktop/image-graphic-design.jpg"
+            tabletPic="/assets/home/tablet/image-graphic-design.jpg"
+            mobilePic="/assets/home/mobile/image-graphic-design.jpg"
+            page="/graphic-design"
+          />
         </GrayCardCollection>
       </div>
       <PageBottom />

@@ -51,24 +51,23 @@ export default function appDesign() {
         </CardCollection>
 
         <GrayCardCollection>
-        <Link href="/web-design">
-            <a>
+
               <GrayCard
                 title="WEB DESIGN"
                 description="VIEW PROJECTS"
-                pic="/assets/home/desktop/image-web-design-small.jpg"
+                desktopPic="/assets/home/desktop/image-web-design-small.jpg"
+                tabletPic = "/assets/home/tablet/image-web-design.jpg"
+                mobilePic = "/assets/home/mobile/image-web-design.jpg"
+                page="/web-design"
               />
-            </a>
-          </Link>
-          <Link href="/graphic-design">
-            <a>
               <GrayCard
                 title="GRAPHIC DESIGN"
                 description="VIEW PROJECTS"
-                pic="/assets/home/desktop/image-graphic-design.jpg"
+                desktopPic="/assets/home/desktop/image-graphic-design.jpg"
+                tabletPic="/assets/home/tablet/image-graphic-design.jpg"
+                mobilePic="/assets/home/mobile/image-graphic-design.jpg"
+                page="/graphic-design"
               />
-            </a>
-          </Link>
         </GrayCardCollection>
       </div>
       <PageBottom />

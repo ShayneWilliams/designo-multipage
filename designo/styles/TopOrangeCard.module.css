@@ -14,6 +14,7 @@
   text-align: center;
   height: 252px;
   border-radius: 15px;
+
 }
 
 .container p{
@@ -26,4 +27,13 @@
 .container h1{
     margin-bottom: 24px;
     align-self: flex-end;
+}
+
+@media(max-width: 375px){
+  .container h1{
+    font-size: 36px;
+  }
+  .content{
+    width: 80%;
+  }
 }

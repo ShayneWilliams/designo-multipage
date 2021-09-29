@@ -31,3 +31,10 @@
 .locations div{
     margin: 46px 0 32px 0;
 }
+
+
+@media(max-width: 768px){
+    .locations{
+        flex-direction: column;
+    }
+}

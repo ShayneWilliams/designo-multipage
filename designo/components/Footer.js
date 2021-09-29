@@ -29,7 +29,9 @@ export default function Footer() {
         <div className={styles['bottom']}>
           <div>
             <p>
-              Designo Central Office
+              <b>
+                Designo Central Office
+                </b>
               <br />
               3886 Wellington Street
               <br />
@@ -39,7 +41,11 @@ export default function Footer() {
 
           <div>
             <p>
+
+              <b>
+
               Contact Us (Central Office)
+              </b>
               <br />
               P : +1 253-863-8967 
               <br />

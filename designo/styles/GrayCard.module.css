@@ -1,30 +1,125 @@
 
-.container{
-    max-width:  541px;
-    position: relative;
-    height: 308px;
-    /* width: 541px; */
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    color: white;
-    /* background-color: rgba(0, 0, 0, 0.5) */
-    border-radius: 15px;
-    overflow: hidden;
 
 
+
+.gray-card__container{
+  display: flex;
+  justify-content: space-between;
+  margin: 160px auto;
+  width: 100%;
 }
 
-.content{
-    display: grid;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    height: 308px;
-    width: 541px;
-    align-content: center;
+/* @media(max-width: 1100px){
+  .gray-card__container{
+      display: grid;
+      margin: 120px auto;
+      justify-content: center;
+      width: 90%;
+  }
+
+} */
+
+@media(max-width: 768px){
+  .gray-card__container{
+      display: grid;
+      margin: 120px auto;
+      justify-content: center;
+  }
+
+}
+.gray-card__item{
+  /* max-width:  541px; */
+  position: relative;
+  height: 308px;
+  width: 49%;
+  /* width: 90vw; */
+  /* width: 541px; */
+
+  /* display: grid;
+  justify-content: center;
+  align-content: center; */
+  /* display: flex;
+  flex-direction: column; */
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.5) */
+  border-radius: 15px;
+  overflow: hidden;
+  
+  
+}
+
+.gray-card__item__content{
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 100%;
+  /* width: 541px; */
+  align-content: center;
+  /* justify-self: center; */
 }   
 
-.content:hover{
+.gray-card__item__content:hover{
   background: rgba(231, 129, 107, 0.5);
   cursor: pointer;
+}
+
+.gray-card__pic{
+  position: relative;
+}
+.gray-card__pic img{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 308px;
+}
+
+@media(max-width: 768px){
+  
+  .gray-card__container{
+    max-width: unset;
+    grid-template-columns: 100%;
+    /* align-self: center; */
+    justify-content: center;
+
+  }
+  .gray-card__item{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 24px;
+    /* height: 200px; */
+  }
+  /* .gray-card__pic{
+    height: 100%;
+  } */
+  .gray-card__item img{
+    max-width: unset;
+
+    width: 100%;
+
+    margin: auto;
+    /* height: 200px;
+     */
+     height: 200px;
+  }
+  .gray-card__item__content{
+    max-width: unset;
+
+    width: 100%;
+
+    margin: auto;
+    height: 200px;
+  }
+}
+
+
+@media(max-width: 375px){
+  .gray-card__item{
+    height: 250px;
+  }
+  .gray-card__item img{
+    height: 250px;
+  }
+  .gray-card__item__content{
+    height: 250px;
+  }
 }

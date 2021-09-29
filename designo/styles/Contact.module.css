@@ -1,0 +1,169 @@
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    max-width: 1110px;
+}
+
+.orange-card{
+    width: 100%;
+    height: 480px;
+    background: #E7816B;
+    color: white;
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.orange-card__circle{
+    position:absolute;
+}
+
+
+.orange-card__text{
+    width: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* margin: auto; */
+
+}
+
+
+.orange-card__text h1{
+    width: 445px;
+    align-self: end;
+    /* margin-left: 12%;
+    justify-self: start; */
+    /* display: grid; */
+    /* align-items: end; */
+
+}
+
+
+.orange-card__text p{
+    max-width: 445px;
+    align-self: start;
+}
+
+.orange-card__form{
+    width: 50%;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    
+}
+.orange-card form{
+    width: 380px;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    
+}
+.orange-card__form input{
+    /* width: 50%; */
+    outline: none;
+    display: flex;
+    width: 380px;
+    height: 38px;
+    margin-bottom: 25px;
+
+    border: none;
+    border-bottom: solid 2px white;
+    background: none;
+    /* font-family: 'jost' !important; */
+
+}
+
+.orange-card__form input::placeholder{
+    /* width: 50%; */
+    color: white;
+}
+.orange-card__form textarea{
+    /* width: 50%; */
+    display: flex;
+    width: 380px;
+    height: 102px;
+    margin-bottom: 25px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: solid 2px white;
+    /* font-family: 'jost' !important; */
+
+}
+.orange-card__form textarea::placeholder{
+    /* width: 50%; */
+    color: white;
+    /* font-family: 'jost'; */
+}
+
+.orange-card__form button{
+    width: 156px;
+    height: 56px;
+    border: none;
+    background: white;
+    border-radius: 8px;
+    display: grid;
+    justify-self: end;
+    justify-items: center;
+    align-items: center;
+    font-size: 15px;
+    /* font-family: 'jost'; */
+}
+
+@media(max-width: 1100px){
+    .orange-card{
+        flex-direction: column;
+        height: unset;
+    }
+
+    .orange-card__text{
+        width: unset;
+    }
+
+    .orange-card__text p{
+        max-width: unset;
+        width: 80%;
+    }
+    .orange-card__text h1{
+        width: 80%;
+    }
+    .orange-card__form{
+        /* width: unset; */
+        width: 80%;
+        margin-bottom: 71px;
+    }
+
+    .orange-card form{
+        width: 100%;
+    }
+    .orange-card input {
+        width: 100%;
+        
+    }
+
+    .orange-card textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .orange-card__circle{
+        left: -30%;
+    }
+}
+@media (max-width: 375px) {
+    .container{
+        width: 100%;
+    }
+}
+
+/* disable height property */
+/* use 1024-1100 viewport
+change flex-direction to column
+center content  
+increase width to at least 80% */

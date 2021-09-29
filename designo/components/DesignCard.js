@@ -4,11 +4,12 @@ export default function DesignCard(props) {
   const { pic, title, description } = props;
   return (
     <>
-
       <div className={styles['container']}>
         <img src={pic} />
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <div className={styles['content']}>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
       </div>
     </>
   );

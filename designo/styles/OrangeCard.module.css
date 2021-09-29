@@ -15,7 +15,7 @@
 
     width: 80%;
     max-width: 1111px;
-    height: 292px;
+    /* height: 292px; */
     margin: 0 auto -72px auto;
     border-radius: 15px;
     position: relative;
@@ -59,6 +59,33 @@
     font-family: 'jost';
 }
 
+@media( max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 90%;
+    }
+    .container button{
+        margin-top: 32px;
+    }
+
+    .container p{
+        width: unset;
+    }
+}
+
+
+@media( max-width: 375px){
+    .container{
+        padding:25px;
+    }
+
+}
 /* .container img{
     position: absolute;
     z-index: 20;

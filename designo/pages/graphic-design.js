@@ -39,33 +39,30 @@ export default function GraphicDesign() {
             description="A poster made in collaboration with the Federal Art Project"
             pic="/assets/graphic-design/desktop/image-science.jpg"
           />
-            <DesignCard
+          <DesignCard
             title="LOOPSTUDIOS"
             description="A VR experience app made for Loopstudios"
             pic="/assets/app-design/desktop/image-loopstudios.jpg"
           />
-
         </CardCollection>
 
         <GrayCardCollection>
-          <Link href="/web-design">
-            <a>
-              <GrayCard
-                title="WEB DESIGN"
-                description="VIEW PROJECTS"
-                pic="/assets/home/desktop/image-web-design-small.jpg"
-              />
-            </a>
-          </Link>
-          <Link href="/app-design">
-            <a>
-              <GrayCard
-                title="APP DESIGN"
-                description="VIEW PROJECTS"
-                pic="/assets/home/desktop/image-app-design.jpg"
-              />
-            </a>
-          </Link>
+          <GrayCard
+            title="APP DESIGN"
+            description="VIEW PROJECTS"
+            desktopPic="/assets/home/desktop/image-app-design-small.jpg"
+            tabletPic="/assets/home/tablet/image-app-design.jpg"
+            mobilePic="/assets/home/mobile/image-app-design.jpg"
+            page="/app-design"
+          />
+          <GrayCard
+            title="GRAPHIC DESIGN"
+            description="VIEW PROJECTS"
+            desktopPic="/assets/home/desktop/image-graphic-design.jpg"
+            tabletPic="/assets/home/tablet/image-graphic-design.jpg"
+            mobilePic="/assets/home/mobile/image-graphic-design.jpg"
+            page="/graphic-design"
+          />
         </GrayCardCollection>
       </div>
       <PageBottom />

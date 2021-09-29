@@ -7,3 +7,9 @@
     row-gap: 32px;
 }
 
+
+@media(max-width: 1100px){
+    .card-collection{
+        grid-template-columns: unset;
+    }
+}
