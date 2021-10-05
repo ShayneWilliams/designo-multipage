@@ -129,14 +129,16 @@ export default function Home() {
 
   if(tablet){
     projects = (
-      <div className={styles['projects-mobile']}>
+      <div className={styles['mobile-projects']}>
 
 
 {/* item 1 */}
       <Link href="/web-design">
-        <div>
+        <div className={styles['mobile-projects__item']}>
 
       {mobile ? <img src="/assets/home/mobile/image-web-design.jpg" /> : <img src="/assets/home/tablet/image-web-design.jpg" />}
+      <div className={styles['mobile-projects__item__background']}/>
+
         <div>
           <h2>WEB DESIGN</h2>
           <p>
@@ -167,10 +169,11 @@ export default function Home() {
 {/* item 2 */}
 
         <Link href="/app-design">
-      <div >
+      <div className={styles['mobile-projects__item']}>
       {mobile ? <img src="/assets/home/mobile/image-app-design.jpg" /> : <img src="/assets/home/tablet/image-app-design.jpg" />}
 
         {/* <img src="/assets/home/desktop/image-app-design.jpg" /> */}
+        <div className={styles['mobile-projects__item__background']}/>
           <div >
             <h2>APP DESIGN</h2>
             <p>
@@ -198,10 +201,12 @@ export default function Home() {
       {/* project 3 bottom */}
 
         <Link href="/graphic-design">
-      <div >
-      {mobile ? <img src="/assets/home/mobile/image-web-design.jpg" /> : <img src="/assets/home/tablet/image-web-design.jpg" />}
+      <div className={styles['mobile-projects__item']}>
+      {mobile ? <img src="/assets/home/mobile/image-graphic-design.jpg" /> : <img src="/assets/home/tablet/image-graphic-design.jpg" />}
 
         {/* <img src="/assets/home/desktop/image-graphic-design.jpg" /> */}
+      <div className={styles['mobile-projects__item__background']}/>
+
           <div >
             <h2>GRAPHIC DESIGN</h2>
             <p>
@@ -231,6 +236,7 @@ export default function Home() {
 
   return (
     <>
+          <Nav />
       <div className={styles['gray-shape__left__container']}>
         <div className={styles['gray-shape__left__container__content']} />
       </div>
@@ -246,7 +252,6 @@ export default function Home() {
             rel="stylesheet"
           />
         </Head>
-        <Nav />
         <div className={styles.hero}>
           <div className={styles['hero__circle']}>
             <img src="/assets/home/desktop/bg-pattern-hero-home.svg" />

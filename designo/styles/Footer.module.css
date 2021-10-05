@@ -72,6 +72,9 @@
     /* width: 100px; */
 
 }
+.nav-container__items a:hover{
+    color: var(--peach)
+}
 
 .nav-container__logo{
     width: 50%;

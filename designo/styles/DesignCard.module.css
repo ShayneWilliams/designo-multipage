@@ -9,6 +9,14 @@
     text-align: center;
     /* min-width: 350px; */
 }
+
+.container:hover{
+    background-color: var(--peach);
+    color: white !important;
+}
+.container:hover h2{
+    color: white;
+}
 .container img{
     height:320px;
     width: 100%;

@@ -12,8 +12,8 @@ export default function about() {
   const isMobile = useMediaQuery(375)
   return (
     <>
-    <div className={styles.container}>
       <Nav />
+    <div className={styles.container}>
       <div className={styles['orange-card']}>
         <div className={styles['orange-card__content']}>
           <div className={styles['orange-card__content__text']}>

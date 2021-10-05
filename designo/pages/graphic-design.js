@@ -50,18 +50,19 @@ export default function GraphicDesign() {
           <GrayCard
             title="APP DESIGN"
             description="VIEW PROJECTS"
-            desktopPic="/assets/home/desktop/image-app-design-small.jpg"
+            desktopPic="/assets/home/desktop/image-app-design.jpg"
             tabletPic="/assets/home/tablet/image-app-design.jpg"
             mobilePic="/assets/home/mobile/image-app-design.jpg"
             page="/app-design"
           />
+
           <GrayCard
-            title="GRAPHIC DESIGN"
+            title="WEB DESIGN"
             description="VIEW PROJECTS"
-            desktopPic="/assets/home/desktop/image-graphic-design.jpg"
-            tabletPic="/assets/home/tablet/image-graphic-design.jpg"
-            mobilePic="/assets/home/mobile/image-graphic-design.jpg"
-            page="/graphic-design"
+            desktopPic="/assets/home/desktop/image-web-design-small.jpg"
+            tabletPic="/assets/home/tablet/image-web-design.jpg"
+            mobilePic="/assets/home/mobile/image-web-design.jpg"
+            page="/web-design"
           />
         </GrayCardCollection>
       </div>

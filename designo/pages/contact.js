@@ -8,10 +8,10 @@ export default function Contact() {
     return (
         <div >
             
+        <Nav/>
         <div className={styles['container']}>
 
 
-        <Nav/>
         <div className={styles['orange-card']}>
             <div className={styles['orange-card__circle']}>
                 

@@ -58,7 +58,7 @@ export default function WebDesign() {
           <GrayCard
             title="APP DESIGN"
             description="VIEW PROJECTS"
-            desktopPic="/assets/home/desktop/image-app-design-small.jpg"
+            desktopPic="/assets/home/desktop/image-app-design.jpg"
             tabletPic="/assets/home/tablet/image-app-design.jpg"
             mobilePic="/assets/home/mobile/image-app-design.jpg"
             page="/app-design"

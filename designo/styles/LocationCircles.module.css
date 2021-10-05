@@ -21,13 +21,10 @@
     border-radius: 5px;
 }
 
-/* .locations__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-
+.locations button:hover{
+    background-color: var(--light-peach);
+    cursor: pointer;
+}
 .locations div{
     margin: 46px 0 32px 0;
 }

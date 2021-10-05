@@ -2,11 +2,15 @@ import React from 'react';
 import Nav from '../components/Nav';
 import PageBottom from '../components/PageBottom';
 import styles from '../styles/Location.module.css';
+import useMediaQuery from '../components/useMediaQuery'
 export default function Locations() {
+
+  const tablet = useMediaQuery(768)
+  const mobile = useMediaQuery(425) 
   return (
     <>
-      <div className={styles['container']}>
         <Nav />
+      <div className={styles['container']}>
         <div className={styles.location}>
           <div className={styles['map-right']}>
             <div className={styles['map-right__content']}>
@@ -35,7 +39,8 @@ export default function Locations() {
             </div>
 
             <div>
-              <img src="/assets/locations/desktop/image-map-canada.png" />
+
+              {tablet ?  <img src="/assets/locations/tablet/image-map-canada.png" /> : <img src="/assets/locations/desktop/image-map-canada.png" /> }
             </div>
           </div>
 
