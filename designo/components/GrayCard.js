@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/GrayCard.module.css';
-import useViewport from './useViewport';
 import useMediaQuery from './useMediaQuery';
 import Link from 'next/link'
 export default function GrayCard(props) {
   const { title, description, desktopPic, mobilePic, tabletPic } = props;
-  // const [output, setOutput] = useState(null)
 
   const tablet = useMediaQuery(768);
   const mobile = useMediaQuery(375);
   return (
-    //  output
 <Link href={props.page}>
 
     <div className={styles['gray-card__item']}>

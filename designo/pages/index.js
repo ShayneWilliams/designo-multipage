@@ -3,29 +3,9 @@ import styles from '../styles/Home.module.css';
 import Nav from '../components/Nav';
 import PageBottom from '../components/PageBottom';
 import Link from 'next/link';
-import useViewport from '../components/useViewport';
 import useMediaQuery from '../components/useMediaQuery';
 
 
-
-
-
-// import Home from '../components/Home'
-
-
-// let viewportSize = '';
-
-// if (window.innerWidth){
-//   viewportSize = window.innerWidth
-// }
-// console.log(viewportSize)
-
-// useEffect(() => {
-//   console.log(viewportSize)
-
-// }, [viewportSize])
-
-// create different projects at any pixels less than 1085px
 
 export default function Home() {
 
@@ -33,10 +13,6 @@ export default function Home() {
   const tablet = useMediaQuery(768);
   const mobile = useMediaQuery(375);
 
-  const { width } = useViewport();
-  // const tablet = 768;
-  // const mobile = 375;
-  const breakpoint = 768;
 
   let projects = (
     <div className={styles.projects}>
@@ -172,7 +148,6 @@ export default function Home() {
       <div className={styles['mobile-projects__item']}>
       {mobile ? <img src="/assets/home/mobile/image-app-design.jpg" /> : <img src="/assets/home/tablet/image-app-design.jpg" />}
 
-        {/* <img src="/assets/home/desktop/image-app-design.jpg" /> */}
         <div className={styles['mobile-projects__item__background']}/>
           <div >
             <h2>APP DESIGN</h2>
@@ -204,7 +179,6 @@ export default function Home() {
       <div className={styles['mobile-projects__item']}>
       {mobile ? <img src="/assets/home/mobile/image-graphic-design.jpg" /> : <img src="/assets/home/tablet/image-graphic-design.jpg" />}
 
-        {/* <img src="/assets/home/desktop/image-graphic-design.jpg" /> */}
       <div className={styles['mobile-projects__item__background']}/>
 
           <div >
@@ -273,9 +247,6 @@ export default function Home() {
             <img src="assets/home/desktop/image-hero-phone.png" />
           </div>
         </div>
-        {/* <div className={styles['gray-shape__left__container']}>
-          <div className={styles['gray-shape__left__container__content']} />
-        </div> */}
 
         {projects}
 
@@ -322,7 +293,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <img src ='/assets/home/desktop/illustration-friendly.svg'/> */}
       </div>
       <div className={styles['gray-shape__right__container']}>
         <div className={styles['gray-shape__right__container__content']} />

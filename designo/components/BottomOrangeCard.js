@@ -22,10 +22,7 @@ export default function OrangeCard() {
           </a>
         </Link>
       </div>
-      {/* <div className={styles['test']}>
 
-            <img src='/assets/shared/desktop/bg-pattern-three-circles.svg'/>
-            </div> */}
     </div>
   );
 }

@@ -7,7 +7,6 @@ import DesignCard from '../components/DesignCard';
 import CardCollection from '../components/CardCollection';
 import GrayCard from '../components/GrayCard';
 import GrayCardCollection from '../components/GrayCardCollection';
-import Link from 'next/link';
 export default function WebDesign() {
   return (
     <>

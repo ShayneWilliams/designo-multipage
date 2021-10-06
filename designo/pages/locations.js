@@ -6,7 +6,6 @@ import useMediaQuery from '../components/useMediaQuery'
 export default function Locations() {
 
   const tablet = useMediaQuery(768)
-  const mobile = useMediaQuery(425) 
   return (
     <>
         <Nav />
@@ -33,9 +32,6 @@ export default function Locations() {
                 </p>
               </div>
 
-              {/* <div className={styles['hero__circle']}>
-            <img src="/assets/shared/desktop/bg-pattern-two-circles.svg" />
-          </div> */}
             </div>
 
             <div>

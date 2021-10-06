@@ -5,7 +5,7 @@ import PageBottom from '../components/PageBottom';
 import styles from '../styles/About.module.css';
 import useMediaQuery from '../components/useMediaQuery'
 
-export default function about() {
+export default function About() {
 
 
   const isTablet = useMediaQuery(1024)
@@ -34,11 +34,9 @@ export default function about() {
         </div>
       </div>
       <div className={styles['peach-card-1']}>
-      {/* {isTablet ?  <img src="/assets/about/tablet/image-world-class-talent.jpg" /> : <img src="/assets/about/desktop/image-world-class-talent.jpg" />} */}
       {isMobile ?  <img src="/assets/about/mobile/image-world-class-talent.jpg"/> :  isTablet ?  <img src="/assets/about/tablet/image-world-class-talent.jpg" /> : <img src="/assets/about/desktop/image-world-class-talent.jpg" />}
 
 
-        {/* <img src="/assets/about/desktop/image-world-class-talent.jpg" /> */}
         <div className={styles['peach-card__content-1']}>
           <h2>World-class talent</h2>
           <p>
@@ -77,8 +75,6 @@ export default function about() {
           </div>
 
       {isMobile ?  <img src="/assets/about/mobile/image-real-deal.jpg" /> :  isTablet ?  <img src="/assets/about/tablet/image-real-deal.jpg" /> : <img src="/assets/about/desktop/image-real-deal.jpg" />}
-
-          {/* {isTablet ?  <img src="/assets/about/tablet/image-real-deal.jpg" /> : <img src="/assets/about/desktop/image-real-deal.jpg" />} */}
           
         </div>
     </div>
