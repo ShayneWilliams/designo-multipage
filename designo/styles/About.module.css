@@ -83,6 +83,8 @@
   background-repeat: no-repeat;
   background-position: bottom -220px left 300px;
   background-size: 584px 584px; */
+
+  justify-content: space-between;
   overflow: hidden;
 }
 
